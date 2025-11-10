@@ -5,10 +5,11 @@ from datetime import date
 # Connect to MySQL
 conn = mysql.connector.connect(
     host="localhost",
-    user=os.getenv("MYSQL_USER", "root"),
-    password=os.getenv("MYSQL_PASSWORD", "Sravani@123"),
-    database=os.getenv("MYSQL_DATABASE", "library")
+    user="library_user",
+    password="Sravani@123",
+    database="library"
 )
+
 cur = conn.cursor()
 
 
